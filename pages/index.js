@@ -130,6 +130,7 @@ export default function Home() {
       width: "180px",
       dataIndex: "id",
       key: "id",
+      fixed: "right",
       render: value => {
         return (
           <div className="d-flex space-between">
@@ -181,6 +182,7 @@ export default function Home() {
         loading={isLoading}
         pagination={pagination}
         onChange={handleTableChange}
+        scroll={{ x: true }}
       />
       <Modal
         title="Delete"
